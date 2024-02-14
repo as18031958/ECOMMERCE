@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "braintree": "^3.21.0",
+    "concurrently": "^8.2.2"
+  },
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ecomfrontend": "cd ecomfrontend && npm start",
+    "ecombackend": "cd ecombackend && npm start",
+    "start": "concurrently \"npm run ecomfrontend\" \"npm run ecombackend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
